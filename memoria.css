@@ -1,0 +1,122 @@
+
+*{
+	margin: 0;
+	padding: 2;
+}
+#pontuText{
+	font-family: Impact;
+	color:black;
+	margin-right: 100%;
+	margin-top: 20px;
+	font-size: 29px;
+	margin-left: 9%;
+}
+button{
+	text-align: center;
+	color: blue;
+	background-color:rgb(252, 252, 252);
+	font-size: 150%;
+	border-radius: 10px;
+	font-family: Impact;
+	font-size: 35px;
+	border-color: red;
+}
+#pontuacao{
+	color:red;
+}
+
+#tempo{
+	color:black;
+	font-size: 29px;
+	margin-top: 10px;
+}
+#minute{
+	color: red;
+}
+#second{
+	color: red;
+}
+#millisecond{
+	color: red;
+}
+
+#cronometro{
+	font-family: Impact;
+	margin-right: 72%;
+	color: red;
+	margin-top: 10px;
+}
+
+body{
+	background-color:  rgb(252, 252, 252);
+	text-align: center;
+}
+
+#titulo{
+    font-family: Impact;
+    color: black;
+    font-size: 55px;
+}
+
+#developer{
+	font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+#container{
+	width: 1300px;
+	height: 600px;
+	background-color:rgb(252, 252, 252);
+	position: relative;
+	margin: 10px auto;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.card{
+	width: 160px;
+	height: 240px;
+	position: absolute;
+	border-radius: 10px;
+    perspective: 600px;
+}
+
+.face{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+
+.back{
+	background: url('imagens/verso.jpg');
+}
+
+.front{
+    transform: rotateY(-180deg);
+}
+
+.back.flipped{
+    transform: rotateY(180deg);
+	background: url('imagens/verso.jpg');
+}
+
+.front.flipped{
+    transform: rotateY(0deg);
+ }
+
+.card:hover{
+    box-shadow: 0 0 40px red;
+}
+
+.face.flipped.match{
+	box-shadow: 0 0 25px green;
+}
+
+#imgMatchSign{
+	position: relative;
+	transition-duration: 2s;
+	z-index: -2;
+	transition-property: top, opacity;
+}
